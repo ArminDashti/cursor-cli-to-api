@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: "no"
+    environment:
+      POSTGRES_USER: cursorcli
+      POSTGRES_PASSWORD: cursorcli
+      POSTGRES_DB: cursorcli
+    ports:
+      - "5461:5432"
+    volumes:
+      - cursor_cli_pg:/var/lib/postgresql/data
+
+volumes:
+  cursor_cli_pg:
