@@ -11,3 +11,6 @@ bin/
 *.tsbuildinfo
 coverage/
 .vite/
+
+# commit-push-to-github: large files (>5MB) auto-ignored
+cursor-cli-to-api-api/bin/server.exe
